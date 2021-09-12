@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Queries>
+<RegisterEmployee>
+	<![CDATA[
+			INSERT INTO tbl_registration (EmployeeName, Mobile, Email,Password,Gender, DoB, EmployeeAge, EmployeeType,IsActive)  VALUES (@EmployeeName,@Mobile,@Email,@Password,@Gender,@DoB, @EmployeeAge, @EmployeeType,@IsActive);		
+				]]>
+</RegisterEmployee>
+	<Login>
+		<![CDATA[ 
+		SELECT Email,Password,IsActive FROM tbl_registration WHERE EmployeeId=@EmployeeId
+	]]>
+	</Login>
+</Queries>
