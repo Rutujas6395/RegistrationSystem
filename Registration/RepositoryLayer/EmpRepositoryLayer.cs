@@ -37,8 +37,7 @@ namespace Registration.RepositoryLayer
             {
                 IsSuccess = true
             };
-
-            try
+           try
             {
                 String SqlQuery = SqlQueries.RegisterEmployee;
                 SqlCommand sqlCommand = new SqlCommand(SqlQuery, sqlConnection);
@@ -72,6 +71,7 @@ namespace Registration.RepositoryLayer
                     res.EmployeeAge = req.EmployeeAge;
                     res.EmployeeType = req.EmployeeType;
                     res.IsActive = req.IsActive;
+                    
                  }
             }
             catch (Exception ex)

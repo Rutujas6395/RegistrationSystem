@@ -19,7 +19,9 @@ namespace Registration.CommonLayer.Model
             //public DateTime DoC { get; set; }
             public int EmployeeAge { get; set; }
             public string EmployeeType { get; set; }
+            public string Message { get; set; }
             public bool IsActive { get; set; }
+           
         }
         public class RegisterEmployeeRes
         {
